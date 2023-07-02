@@ -11,13 +11,12 @@ android {
     buildFeatures {
         dataBinding  = true
     }
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdk 32
+    namespace 'com.carman.kotlin.coroutine'
 
     defaultConfig {
-        applicationId "com.carman.kotlin.coroutine"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdk 21
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
