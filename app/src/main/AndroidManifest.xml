@@ -15,7 +15,7 @@
         <service
             android:name=".MainService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="false" />
 
 <!--        <activity android:name=".ui.MainActivity">-->
 <!--            <intent-filter>-->
@@ -25,7 +25,8 @@
 <!--            </intent-filter>-->
 <!--        </activity>-->
 
-        <activity android:name=".ui.MainHiltActivity">
+        <activity android:name=".ui.MainHiltActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -11,12 +11,12 @@ android {
     buildFeatures {
         dataBinding  = true
     }
-    compileSdk 32
+    compileSdk 33
     namespace 'com.carman.kotlin.coroutine'
 
     defaultConfig {
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -42,7 +42,7 @@ dependencies {
     implementation "androidx.core:core-ktx:$androidx_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
-    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     // 协程核心库
@@ -50,8 +50,8 @@ dependencies {
     // 协程Android支持库
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"
 
-    implementation "androidx.activity:activity-ktx:1.2.2"
-    implementation "androidx.fragment:fragment-ktx:1.3.3"
+    implementation "androidx.activity:activity-ktx:1.7.2"
+    implementation "androidx.fragment:fragment-ktx:1.5.2"
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_KTX_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_KTX_version"
@@ -64,8 +64,8 @@ dependencies {
     implementation "io.coil-kt:coil-svg:$coil_version"
 
     // ok http
-    implementation "com.squareup.okhttp3:okhttp:4.9.0"
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation "com.squareup.okhttp3:okhttp:4.11.0"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
 
     // retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -73,6 +73,6 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-    implementation "com.google.dagger:hilt-android:2.35.1"
-    kapt "com.google.dagger:hilt-android-compiler:2.35.1"
+    implementation "com.google.dagger:hilt-android:2.46"
+    kapt "com.google.dagger:hilt-android-compiler:2.46"
 }
